@@ -1,7 +1,13 @@
 .App {
-  text-align: center;
-}
 
+  width: 90%;
+  margin: 30px auto;
+}
+.all-users, .product-containers{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  }
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +41,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+.product-item{
+  background-color:antiquewhite;
+  padding: 15px;
+  border-radius: 10px;
+}
+.buy-btn{
+  background-color: #444;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.counter-container{
+  margin: 30px 0;
+}
+.single-user{
+  background-color: goldenrod;
+  padding: 15px;
+  border-radius: 10px;
 }
